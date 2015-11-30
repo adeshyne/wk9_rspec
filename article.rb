@@ -21,8 +21,10 @@ class Article
   end
 
   def authors_name_starts_with_q?
+    if @author
     @author[0].downcase == "q"
   end
+end
 
   def article_as_html
     title_as_html + author_as_html + body_as_html
