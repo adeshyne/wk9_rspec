@@ -1,0 +1,26 @@
+<%= form_for @user do |f| %>
+<h1>User Info</h1>
+<p>
+	<%=f.label :fname %>
+	<%=f.text_field :fname %>
+</p>
+<p>
+	<%=f.label :lname %>
+	<%=f.text_field :lname %>
+</p>
+<p>
+	<%=f.label :email %>
+	<%=f.text_field :email %>
+</p>
+<p>
+	<%=f.label :phonenumber %>
+	<%=f.text_field :phonenumber %>
+</p>
+<p>
+	<%=f.label :cash %>
+	<%=f.text_field :cash %>
+</p>
+
+<br>
+<%=f.submit :create %>
+<% end %>

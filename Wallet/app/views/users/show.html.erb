@@ -1,0 +1,6 @@
+<p>This <%=@user.fname %> <%= @user.lname %> is signed up <%= distance_of_time_in_words(Time.now, @user.created_at) %> ago? </p>
+
+<br>
+
+<%= link_to("delete", user_path(@user.id), method: :delete)%>
+<%= link_to("edit", edit_user_path(@user.id))%>
